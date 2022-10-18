@@ -25,7 +25,7 @@ jobs:
       - name: 开始打包
         run: |
           mvn -B clean package -Dmaven.test.skip=true --file pom.xml -T 4
-      - name: 开始下载
+      - name: 开始下载1
         run: |
           cd ./target
           java -jar -Xms1g -Xmx7g ./*.jar
